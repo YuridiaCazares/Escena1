@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <!--Incluimos A-Frame como una etiqueta de secuencia de comandos  --> 
+  <head>
+    <title>Escena-1</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+
+  <!--Creamos una escena-->
+  <body>
+    
+    <a-scene>
+       
+
+
+    <a-scene background="#5EB4BA"></a-scene>
+
+     <!-- Tallo de la flor 1 -->
+    <a-cylinder position="5 -4 -5" radius="0.2" height="5" color="green"></a-cylinder>
+    
+    <!-- Pétalos de la flor 1-->
+    <a-cone position="5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 90 0" color="red"></a-cone>
+    <a-cone position="5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 72 0" color="blue"></a-cone>
+    <a-cone position="5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 144 0" color="orange"></a-cone>
+    <a-cone position="5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 216 0" color="purple"></a-cone>
+    <a-cone position="5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 288 0" color="pink"></a-cone>
+    
+    <!-- Centro de la flor 1 -->
+    <a-sphere position="5 -1 -5" radius="0.5" color="yellow"></a-sphere>
+
+
+
+
+
+    <!-- Tallo de la flor 2 -->
+    <a-cylinder position="-5 -4 -5" radius="0.2" height="5" color="green"></a-cylinder>
+    
+    <!-- Pétalos de la flor 2-->
+    <a-cone position="-5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 90 0" color="red"></a-cone>
+    <a-cone position="-5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 72 0" color="blue"></a-cone>
+    <a-cone position="-5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 144 0" color="orange"></a-cone>
+    <a-cone position="-5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 216 0" color="purple"></a-cone>
+    <a-cone position="-5 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 288 0" color="pink"></a-cone>
+    
+    <!-- Centro de la flor 2-->
+    <a-sphere position="-5 -1 -5" radius="0.5" color="yellow"></a-sphere>
+
+
+
+
+    <!-- Tallo de la flor 3 -->
+    <a-cylinder position="0 -4 -5" radius="0.2" height="5" color="green"></a-cylinder>
+    
+    <!-- Pétalos de la flor 3-->
+    <a-cone position="0 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 90 0" color="red"></a-cone>
+    <a-cone position="0 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 72 0" color="blue"></a-cone>
+    <a-cone position="0 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 144 0" color="orange"></a-cone>
+    <a-cone position="0 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 216 0" color="purple"></a-cone>
+    <a-cone position="0 -1 -5" radius-bottom="1" radius-top="2" height="0.5" rotation="0 288 0" color="pink"></a-cone>
+    
+    <!-- Centro de la flor 3-->
+    <a-sphere position="0 -1 -5" radius="0.5" color="yellow"></a-sphere>
+
+    <!-- Agregamos un cielo-->
+    <a-sky color="#5EB4BA"></a-sky>
+    
+    <!-- Agregamos una base a las flores-->
+    <a-plane
+    position="0 -6 -5"
+    rotation="-90 0 0"
+    width="30"
+    height="5"
+    color="#6CAD1A"
+     ></a-plane>
+
+     <!-- Agregamos texto en la base de las flores -->
+     <a-entity position="0 2 -5" text="value: BIENVENIDO; align: center; width: 20; color: #040404;"></a-entity>
+
+     <!-- Agregamos luces en la base -->
+     <a-light type="point" intensity="2" color="#ff0000" position="0 -6 -5"></a-light>
+     <a-light type="point" intensity="2" color="#00ff00" position="2 -6 -5"></a-light>
+     <a-light type="point" intensity="2" color="#0000ff" position="-2 -6 -5"></a-light>
+ 
+     <a-entity text="value: Escena 1; color: #040404; position: 0 2 0;"></a-entity>
+ 
+    </a-scene>
+    
+  </body>
+</html>
